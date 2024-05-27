@@ -38,8 +38,6 @@ public class LevelController : MonoBehaviour
 
         crystalCounter = FindObjectOfType<CrystalCounter>(); // Находим объект CrystalCounter в сцене
 
-       
-
     }
 
 

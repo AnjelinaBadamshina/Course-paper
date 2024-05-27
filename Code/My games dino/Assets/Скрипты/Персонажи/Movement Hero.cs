@@ -8,6 +8,7 @@ public class MovementHero : MonoBehaviour
     [Header("Настройки перемещения игрока")]
     [Range(0, 10f)] public float speed = 1f; // Скорость перемещения персонажа
     [Range(0, 15f)] public float jumpForce = 8f; // Сила прыжка персонажа
+    public float flipShift;
 
     [Header("Настройки анимации игрока")]
     [SerializeField] private Animator animator; // Ссылка на компонент аниматора персонажа
@@ -18,7 +19,8 @@ public class MovementHero : MonoBehaviour
     public float checkGroundOffsetY = -0.7f; // Смещение точки проверки заземления по оси Y
     public float checkGroundRadius = 0.3f; // Радиус проверки заземления
 
-   
+    public AudioSource Audio;
+
 
     void Start()
     {
@@ -36,7 +38,9 @@ public class MovementHero : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W) && isGrounded) // Проверяем, была ли нажата кнопка прыжка и находится ли персонаж на земле
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce); // Применяем силу прыжка к персонажу
-                
+                                                                     // Воспроизводим звук
+                Audio.Play();
+
             }
         }
         else if (gameObject.CompareTag("Player2"))
@@ -45,7 +49,8 @@ public class MovementHero : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded) // Проверяем, была ли нажата кнопка прыжка и находится ли персонаж на земле
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce); // Применяем силу прыжка к персонажу
-                
+
+                Audio.Play();
             }
         }
 
@@ -70,6 +75,13 @@ public class MovementHero : MonoBehaviour
         FacingRight = !FacingRight; // Меняем направление персонажа
         Vector3 theScale = transform.localScale; // Получаем масштаб персонажа
         theScale.x *= -1; // Инвертируем масштаб по оси X
+
+        // Двигаем персонажа в сторону поворота, так как коллайдеры ассиметричные
+        if (FacingRight)
+            transform.position += flipShift * Vector3.right;
+        else
+            transform.position += flipShift * Vector3.left;
+
         transform.localScale = theScale; // Применяем измененный масштаб
     }
 
@@ -85,6 +97,16 @@ public class MovementHero : MonoBehaviour
         // Проверяем, есть ли коллайдеры в указанной области
         Collider2D[] colliders = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y + checkGroundOffsetY), checkGroundRadius);
 
+        if (Physics2D.OverlapPointAll(new Vector2(transform.position.x, transform.position.y + checkGroundOffsetY), LayerMask.GetMask("Dinosaur")).Length == 1 // Проверяем, что на уровне ног только один динозавр (мы) - не будет срабатывать, когда двое просто проходят сквозь друг друга
+            && Physics2D.OverlapPointAll(new Vector2(transform.position.x, transform.position.y + checkGroundOffsetY - 0.2f), LayerMask.GetMask("Dinosaur")).Length > 0) // Проверяем, что ниже динозавра есть еще динозавр - мы стоим сверху.
+        {
+            rb.includeLayers = LayerMask.GetMask("Dinosaur"); // В RigidBody2D указываем, что игнорируя настройки физики, будем сталкиваться со слоем Dinosaur
+        }
+        else
+        {
+            rb.includeLayers = LayerMask.GetMask("Nothing"); // Убираем слой "Dinosaur" из исключений.
+        }
+
         // Если количество коллайдеров больше 1, то персонаж находится на земле
         if (colliders.Length > 1)
         {
@@ -94,5 +116,13 @@ public class MovementHero : MonoBehaviour
         {
             isGrounded = false; // Иначе персонаж в воздухе
         }
+    }
+
+    // Отрисовка для метода CheckGround()
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, transform.position + Vector3.up * checkGroundOffsetY);
+        Gizmos.DrawWireSphere(transform.position + Vector3.up * checkGroundOffsetY, checkGroundRadius);
     }
 }

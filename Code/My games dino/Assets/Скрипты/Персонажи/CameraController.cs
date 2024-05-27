@@ -62,6 +62,7 @@ public class CameraController : MonoBehaviour
         {
             camera.orthographicSize += Time.deltaTime * sizespeedX; // Отдаляем камеру
         }
+
         // Если камера отдалена больше чем нужно (более определенного минимума), уменьшаем ортографический размер
         else if (camera.orthographicSize > 5)
         {

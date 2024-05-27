@@ -1,0 +1,517 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.21f1 (bf09ca542b87) revision 12519882'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ru' Physical Memory: 16088 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Programms\Unity\2022.3.21f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/Мои данные/Курсовая работа 6 семестр/Game_Dino/My games dino
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+55935
+Successfully changed project path to: D:/Мои данные/Курсовая работа 6 семестр/Game_Dino/My games dino
+D:/Мои данные/Курсовая работа 6 семестр/Game_Dino/My games dino
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [33104] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2982404087 [EditorId] 2982404087 [Version] 1048832 [Id] WindowsEditor(7,cucumberPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [33104] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2982404087 [EditorId] 2982404087 [Version] 1048832 [Id] WindowsEditor(7,cucumberPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 38.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.21f1 (bf09ca542b87)
+[Subsystems] Discovering subsystems at path D:/Programms/Unity/2022.3.21f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Мои данные/Курсовая работа 6 семестр/Game_Dino/My games dino/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3964 MB
+    Driver:   31.0.15.5176
+Initialize mono
+Mono path[0] = 'D:/Programms/Unity/2022.3.21f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Programms/Unity/2022.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Programms/Unity/2022.3.21f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Programms/Unity/2022.3.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Programms/Unity/2022.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012637 seconds.
+- Loaded All Assemblies, in  1.414 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.137 seconds
+Domain Reload Profiling: 2551ms
+	BeginReloadAssembly (512ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (146ms)
+	RebuildNativeTypeToScriptingClass (43ms)
+	initialDomainReloadingComplete (180ms)
+	LoadAllAssembliesAndSetupDomain (531ms)
+		LoadAssemblies (509ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (524ms)
+			TypeCache.Refresh (520ms)
+				TypeCache.ScanAssembly (475ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1138ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (902ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (21ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (643ms)
+			ProcessInitializeOnLoadMethodAttributes (197ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.482 seconds
+Refreshing native plugins compatible for Editor in 10.66 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.609 seconds
+Domain Reload Profiling: 5091ms
+	BeginReloadAssembly (565ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (24ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (117ms)
+	RebuildNativeTypeToScriptingClass (48ms)
+	initialDomainReloadingComplete (128ms)
+	LoadAllAssembliesAndSetupDomain (1622ms)
+		LoadAssemblies (1174ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (781ms)
+			TypeCache.Refresh (652ms)
+				TypeCache.ScanAssembly (590ms)
+			ScanForSourceGeneratedMonoScriptInfo (101ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (2611ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1882ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (17ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (270ms)
+			ProcessInitializeOnLoadAttributes (1429ms)
+			ProcessInitializeOnLoadMethodAttributes (133ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.25 seconds
+Refreshing native plugins compatible for Editor in 15.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4266 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (341.3 KB). Loaded Objects now: 4722.
+Memory consumption went from 153.9 MB to 153.6 MB.
+Total: 13.557600 ms (FindLiveObjects: 0.781300 ms CreateObjectMapping: 0.444100 ms MarkObjects: 11.396400 ms  DeleteObjects: 0.929100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 985217.476095 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (23).png
+  artifactKey: Guid(27f3c39424df7c54bb9867b92de01aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (23).png using Guid(27f3c39424df7c54bb9867b92de01aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299dca863bde34c761a6d9dbeb72e48f') in 0.456908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (40).png
+  artifactKey: Guid(5757a284e16bec14eb62f396543fe582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (40).png using Guid(5757a284e16bec14eb62f396543fe582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71182f7680a46a7f099cfc100e0e207c') in 0.058341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/32x16 buttons Style 1 with symbols/32x16 Button (2).png
+  artifactKey: Guid(3d5043eb4db242a41b03d1cf70389a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/32x16 buttons Style 1 with symbols/32x16 Button (2).png using Guid(3d5043eb4db242a41b03d1cf70389a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243d8453e09f2a44b74b3822216916db') in 0.066709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z symbols only/k.png
+  artifactKey: Guid(260d78d447e482f4c88a040a1ae8e15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z symbols only/k.png using Guid(260d78d447e482f4c88a040a1ae8e15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d780787446bb1d88dd91edebacc077c') in 0.053667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Материалы/Фоны 1/Farmer Story Asset and Backgrounds v2/Farmer Story Sprites/Farmer Story Sprites.png
+  artifactKey: Guid(5d6f72aa04a8acc41a700b6a1cc20b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Фоны 1/Farmer Story Asset and Backgrounds v2/Farmer Story Sprites/Farmer Story Sprites.png using Guid(5d6f72aa04a8acc41a700b6a1cc20b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce1e3955f53db201899536aa036e0b6') in 0.078545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons/16x16 Menu Buttons (100).png
+  artifactKey: Guid(333abe1b567054f46807328f94adf5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons/16x16 Menu Buttons (100).png using Guid(333abe1b567054f46807328f94adf5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3bfb35afc7140b2581e96b66babcd0') in 0.046853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 calculator/Divide (1).png
+  artifactKey: Guid(b84613574d5127b4fad89ab25be92f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 calculator/Divide (1).png using Guid(b84613574d5127b4fad89ab25be92f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5c47fcf68d87431515b3852cf86588') in 0.043532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/32x16 buttons Style 1 with symbols/32x16 Button (5).png
+  artifactKey: Guid(069a29bc360160d408587921f1423dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/32x16 buttons Style 1 with symbols/32x16 Button (5).png using Guid(069a29bc360160d408587921f1423dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0fec0af30619016422f2fe6a474d0a4') in 0.055218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (46).png
+  artifactKey: Guid(fc55dc13948501b4eacfa08e07f7c017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (46).png using Guid(fc55dc13948501b4eacfa08e07f7c017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c3e656023eeb6154e08f1a6464f85d') in 0.045850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (31).png
+  artifactKey: Guid(cfb2db81f4777f041b8e3c23efbbf508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (31).png using Guid(cfb2db81f4777f041b8e3c23efbbf508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e71aeaf208162520fff681db7ea28a4a') in 0.067670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z symbols only/i.png
+  artifactKey: Guid(4cb6afd2997b1a041af624fdce872ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z symbols only/i.png using Guid(4cb6afd2997b1a041af624fdce872ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97378c004a72f09759df7eb96d1110c') in 0.049371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons blank Style 1/16x16 Style 1 SpriteSheet.png
+  artifactKey: Guid(7d11c2e0346c2e04c82fcce747ee7c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons blank Style 1/16x16 Style 1 SpriteSheet.png using Guid(7d11c2e0346c2e04c82fcce747ee7c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b754329788e8dae1f53cbeb374c270') in 0.070701 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 calculator symbols only/Equals.png
+  artifactKey: Guid(76537c5fadf4c3f4b9c2f3994014e7b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 calculator symbols only/Equals.png using Guid(76537c5fadf4c3f4b9c2f3994014e7b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7051156ddda7cbb8ee6d35ba5d360b') in 0.050641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/I (1).png
+  artifactKey: Guid(4d89c4a9ae9cd2a41b05ce4da68b2957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/I (1).png using Guid(4d89c4a9ae9cd2a41b05ce4da68b2957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883483398d066cf7e868caf702078ff8') in 0.053290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (9).png
+  artifactKey: Guid(e26ebc3e76e411445b05819148d2a55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (9).png using Guid(e26ebc3e76e411445b05819148d2a55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88d25dcbb6d65cbcc5325f7aeb444088') in 0.055153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (5).png
+  artifactKey: Guid(d8a8ef216b7e79845b41b6800c1809cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (5).png using Guid(d8a8ef216b7e79845b41b6800c1809cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33f04593644ef14f1a92fe50bc6d616c') in 0.054814 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (34).png
+  artifactKey: Guid(06b45b7f10bc2d44aa152875f88db676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (34).png using Guid(06b45b7f10bc2d44aa152875f88db676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd15b56112a7d08c74b27e269c13e3fca') in 0.078230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (28).png
+  artifactKey: Guid(c019b10599c746b489a4faedc6377449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (28).png using Guid(c019b10599c746b489a4faedc6377449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d97f514140dc7d56224edc3f0ab0c2') in 0.070978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (3).png
+  artifactKey: Guid(9dea5f9b5e6b334449fc86e518237d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (3).png using Guid(9dea5f9b5e6b334449fc86e518237d66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699b665baea21ff594fb117b118dc9eb') in 0.066806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons blank Style 2/Green (1).png
+  artifactKey: Guid(2eacdd69268e29e4a84bf7374631254d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons blank Style 2/Green (1).png using Guid(2eacdd69268e29e4a84bf7374631254d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb75c57cf4acb26d208bf18bbe25e631') in 0.049990 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (48).png
+  artifactKey: Guid(4ccb9fee23fd98a4ab34d527f1860d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (48).png using Guid(4ccb9fee23fd98a4ab34d527f1860d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8dc72c62d56552a19296fe04b81fbea') in 0.084185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000856 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons/16x16 Menu Buttons (102).png
+  artifactKey: Guid(ef998f32390fa1d498f5a54ca32ed658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons/16x16 Menu Buttons (102).png using Guid(ef998f32390fa1d498f5a54ca32ed658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd519cbfca1d035fc3c9534215bd212e4') in 0.046052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (50).png
+  artifactKey: Guid(b7579f858bc650b42b96a2e45f1235e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (50).png using Guid(b7579f858bc650b42b96a2e45f1235e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87bb3fbbac0f4501d123fb5255275691') in 0.039184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/M (2).png
+  artifactKey: Guid(e669ea6c42891084f9898eee3b6d37f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/M (2).png using Guid(e669ea6c42891084f9898eee3b6d37f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47eaccf60a8670d931a753ddc1a81e68') in 0.044704 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/K (1).png
+  artifactKey: Guid(d8a5a1d4dadd7b241ba67d7e4cabfba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/K (1).png using Guid(d8a5a1d4dadd7b241ba67d7e4cabfba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c0ede4e688132ad261cf7426549742') in 0.056286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons/16x16 Menu Buttons (103).png
+  artifactKey: Guid(eed5fd839d1b3b44f83d78311d94b43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons/16x16 Menu Buttons (103).png using Guid(eed5fd839d1b3b44f83d78311d94b43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e5f15e37481ecaa629b6ee7caa1795') in 0.052520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 calculator symbols only/Divide.png
+  artifactKey: Guid(407f46d64dfb2254cadca94ec3b85722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 calculator symbols only/Divide.png using Guid(407f46d64dfb2254cadca94ec3b85722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6564283aae7655fc8e5e9ca628d552') in 0.041265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/E (2).png
+  artifactKey: Guid(3e4354c633b49bc4891b984c4c0faaa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/E (2).png using Guid(3e4354c633b49bc4891b984c4c0faaa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6919e35ee5a885ef5fc4f52864e42d5a') in 0.043681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Материалы/Персонаж/gifs/DinoSprites_tard.gif
+  artifactKey: Guid(c4a071593a01e2045bfd1080ef96f84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Персонаж/gifs/DinoSprites_tard.gif using Guid(c4a071593a01e2045bfd1080ef96f84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d862473ce42ddb3b15fc97d1796dba') in 0.064753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/E (1).png
+  artifactKey: Guid(0ef81dc2dc868dd4f911ba9b6ff187f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/E (1).png using Guid(0ef81dc2dc868dd4f911ba9b6ff187f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a3535dbdc61099926d5154e75188e6') in 0.044983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/32x16 buttons Style 1 with symbols/32x16 Button (9).png
+  artifactKey: Guid(2267691205f68f74f95a6614760e9df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/32x16 buttons Style 1 with symbols/32x16 Button (9).png using Guid(2267691205f68f74f95a6614760e9df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9650775ee88fb358feb326d3334886') in 0.043541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (30).png
+  artifactKey: Guid(c673de66e70927d4db20fbf68c623323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (30).png using Guid(c673de66e70927d4db20fbf68c623323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885c1dac466e5fd6f717bd8d9bb24223') in 0.049565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (8).png
+  artifactKey: Guid(dbacdd480b7754d48b804ff991c71c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (8).png using Guid(dbacdd480b7754d48b804ff991c71c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5ab07fffe392402ff700c27fe5a2a2') in 0.056241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons/16x16 Menu Buttons SpriteSheet.png
+  artifactKey: Guid(a93e2a7e594f44f4989bb4dbcef749a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons/16x16 Menu Buttons SpriteSheet.png using Guid(a93e2a7e594f44f4989bb4dbcef749a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cb40f30267b8e596c8d5b94d10beff7') in 0.081573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (19).png
+  artifactKey: Guid(b96ae6a8aa41e9b43b52e4f9aadb4cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (19).png using Guid(b96ae6a8aa41e9b43b52e4f9aadb4cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b250cdcee65dd19b87ac1e4fa95c032') in 0.050027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (57).png
+  artifactKey: Guid(e59bf3e2acefd4049beed033eb16ef6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (57).png using Guid(e59bf3e2acefd4049beed033eb16ef6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ee6e3e89bc0b87772c238d32ed9b17') in 0.062874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 calculator/Equals (1).png
+  artifactKey: Guid(0bf0368ed07d6e2459b5692fb5bffd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 calculator/Equals (1).png using Guid(0bf0368ed07d6e2459b5692fb5bffd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a38c8f4c570ebaea4e84fdf44ac4f6f4') in 0.057926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (52).png
+  artifactKey: Guid(dba8a159ce30c0b4d890f3cbcf8c7181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (52).png using Guid(dba8a159ce30c0b4d890f3cbcf8c7181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21c63476e70b81fe37c21384b1a99c6c') in 0.041267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (12).png
+  artifactKey: Guid(a98400dcaf7f3104aa474d4f91812692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 menu icons symbols only/16x16 Menu Symbols (12).png using Guid(a98400dcaf7f3104aa474d4f91812692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7202ab0da512cca8aa52c4fa7a2018f') in 0.049131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Материалы/Персонаж/gifs/DinoSprites_mort.gif
+  artifactKey: Guid(d3cccb54ac22c8f459c7166c88226a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Персонаж/gifs/DinoSprites_mort.gif using Guid(d3cccb54ac22c8f459c7166c88226a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573d8b534ab1970be4bbebb389275f31') in 0.045494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/J (1).png
+  artifactKey: Guid(63e773e42e7431445b1abd09557171a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Материалы/Кнопки/Button Kit/16x16 buttons Style 2 A-Z/J (1).png using Guid(63e773e42e7431445b1abd09557171a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980855df48130a10ab50f0bf597a515a') in 0.051635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: �������� �����/������ ���� �������� ��-�� ���������� ������ ������ ��� �� ������� ����������.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

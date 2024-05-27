@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneSettings : MonoBehaviour
 {
     public GameObject PausePanel;
+
+    public WaterRiseController waterRiseController;
 
     // Обновление вызывается один раз за кадр
     void Update()
@@ -16,6 +16,7 @@ public class SceneSettings : MonoBehaviour
             TogglePause();
         }
     }
+
 
     // Метод вызывается при нажатии на кнопку паузы
     public void PauseButtonPressed()
@@ -49,5 +50,21 @@ public class SceneSettings : MonoBehaviour
         bool isPaused = PausePanel.activeSelf; // Проверяем, активна ли панель паузы
         PausePanel.SetActive(!isPaused); // Инвертируем активность панели паузы
         Time.timeScale = isPaused ? 1f : 0f; // Если игра была на паузе, устанавливаем нормальное время, иначе - останавливаем время
+
+        if (waterRiseController != null)
+        {
+            if (isPaused)
+            {
+                // Если игра была на паузе, продолжаем таймер
+                waterRiseController.ResumeAndShowTimer();
+            }
+            else
+            {
+                // Если игра не была на паузе, останавливаем таймер
+                waterRiseController.StopAndHideTimer();
+            }
+
+        }
+
     }
 }

@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    public Transform respawnPoint1; // Первая точка возрождения
-    public Transform respawnPoint2; // Вторая точка возрождения
+    public Transform respawnPointPlayer1; // Первая точка возрождения
+    public Transform respawnPointPlayer2; // Вторая точка возрождения
     public int collisionDamage;
     public string tagPlayer1;
     public string tagPlayer2;
+
 
     private void OnCollisionEnter2D(Collision2D coll)
     {
@@ -22,17 +23,24 @@ public class Damage : MonoBehaviour
 
             // Применяем урон к обоим персонажам
             healthManager.SetHealth(- collisionDamage);
-    
-                // Выбираем случайную точку возрождения
-                Transform respawnPoint = Random.Range(0, 2) == 0 ? respawnPoint1 : respawnPoint2;
 
-                // Перемещаем персонажей на выбранную точку возрождения
-                healthManager.transform.position = respawnPoint.position;
-                healthManager2.transform.position = respawnPoint.position;
+            // Перемещаем персонажей на их соответствующие точки возрождения
+            if (coll.gameObject.CompareTag(tagPlayer1))
+            {
+                healthManager.transform.position = respawnPointPlayer1.position;
+                healthManager2.transform.position = respawnPointPlayer2.position;
+                
+            }
+            else if (coll.gameObject.CompareTag(tagPlayer2))
+            {
+                healthManager.transform.position = respawnPointPlayer2.position;
+                healthManager2.transform.position = respawnPointPlayer1.position;
+                
+            }
+            // Сохраняем здоровье после получения урона (если требуется)
+            SaveLoadManager.SavePlayerHealth(HealthHero.totalHealth);
 
-                // Сохраняем здоровье после получения урона (если требуется)
-                SaveLoadManager.SavePlayerHealth(HealthHero.totalHealth);
-            
         }
     }
+
 }

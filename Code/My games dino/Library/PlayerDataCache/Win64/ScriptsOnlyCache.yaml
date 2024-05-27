@@ -1,12 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ButtonPlate
     - CameraController
     - CharacterLoader
     - CrystalCounter
     - CrystalPicker
     - Damage
     - DisplayHealthCharacters
+    - Door
     - ExinMenu
     - HealthHero
     - HeroTreatment
@@ -21,7 +23,7 @@ ScriptsOnlyBuild:
     - SceneSettings
     - SceneSwitchOnEnter
     - VictorySettings
-    - VolumeSlider
+    - WaterRiseController
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
@@ -53,6 +55,13 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    Unity.Timeline.Editor.dll:
+    - TimelinePreferences
+    - TimelineProjectSettings
+    - UnityEditor.Timeline.SequenceHierarchy
+    - UnityEditor.Timeline.TimelineWindowTimeControl
+    Unity.Timeline.dll:
+    - UnityEngine.Timeline.TimelineAsset
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -130,6 +139,9 @@ ScriptsOnlyBuild:
     fullTypeName: Menu
     methodName: PlayGame
   - assembly: Assembly-CSharp
+    fullTypeName: MusicController
+    methodName: SetMusicVolume
+  - assembly: Assembly-CSharp
     fullTypeName: PlayerSelect
     methodName: SelectRight
   - assembly: Assembly-CSharp
@@ -150,6 +162,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: MusicController
+    methodName: SetSoundsVolume
   - assembly: Assembly-CSharp
     fullTypeName: PlayerSelect
     methodName: SelectLeft
@@ -172,6 +187,9 @@ ScriptsOnlyBuild:
     fullTypeName: SceneSettings
     methodName: PauseButtonPressed
   - assembly: Assembly-CSharp
+    fullTypeName: MusicController
+    methodName: SetMusicVolume
+  - assembly: Assembly-CSharp
     fullTypeName: VictorySettings
     methodName: RestartButtonPressed
   - assembly: Assembly-CSharp
@@ -187,6 +205,9 @@ ScriptsOnlyBuild:
     fullTypeName: LossSettings
     methodName: ChangeScrene
   - assembly: Assembly-CSharp
+    fullTypeName: MusicController
+    methodName: SetSoundsVolume
+  - assembly: Assembly-CSharp
     fullTypeName: VictorySettings
     methodName: ChangeScrene
   - assembly: Assembly-CSharp
@@ -201,57 +222,69 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: VictorySettings
     methodName: RestartButtonPressed
+  - assembly: Assembly-CSharp
+    fullTypeName: VictorySettings
+    methodName: LoadNextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: LossSettings
+    methodName: RestartButtonPressed
+  - assembly: Assembly-CSharp
+    fullTypeName: LossSettings
+    methodName: RestartButtonPressed
+  - assembly: Assembly-CSharp
+    fullTypeName: LossSettings
+    methodName: ChangeScrene
   - assembly: Assembly-CSharp
     fullTypeName: SceneSettings
     methodName: PauseButtonPressed
   - assembly: Assembly-CSharp
-    fullTypeName: LossSettings
-    methodName: RestartButtonPressed
-  - assembly: Assembly-CSharp
-    fullTypeName: LossSettings
-    methodName: RestartButtonPressed
-  - assembly: Assembly-CSharp
-    fullTypeName: VictorySettings
-    methodName: LoadNextLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: SceneSettings
-    methodName: ContinueButtonPressed
+    fullTypeName: MusicController
+    methodName: SetMusicVolume
   - assembly: Assembly-CSharp
     fullTypeName: SceneSettings
     methodName: ChangeScene
   - assembly: Assembly-CSharp
     fullTypeName: SceneSettings
-    methodName: RestartButtonPressed
+    methodName: ContinueButtonPressed
   - assembly: Assembly-CSharp
     fullTypeName: VictorySettings
-    methodName: ChangeScrene
-  - assembly: Assembly-CSharp
-    fullTypeName: LossSettings
-    methodName: ChangeScrene
-  - assembly: Assembly-CSharp
-    fullTypeName: VictorySettings
-    methodName: ChangeScrene
-  - assembly: Assembly-CSharp
-    fullTypeName: LossSettings
     methodName: ChangeScrene
   - assembly: Assembly-CSharp
     fullTypeName: SceneSettings
     methodName: RestartButtonPressed
   - assembly: Assembly-CSharp
-    fullTypeName: SceneSettings
-    methodName: ChangeScene
+    fullTypeName: MusicController
+    methodName: SetSoundsVolume
   - assembly: Assembly-CSharp
     fullTypeName: VictorySettings
     methodName: LoadNextLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: SceneSettings
-    methodName: ContinueButtonPressed
   - assembly: Assembly-CSharp
     fullTypeName: SceneSettings
     methodName: PauseButtonPressed
   - assembly: Assembly-CSharp
+    fullTypeName: SceneSettings
+    methodName: ContinueButtonPressed
+  - assembly: Assembly-CSharp
     fullTypeName: VictorySettings
     methodName: RestartButtonPressed
+  - assembly: Assembly-CSharp
+    fullTypeName: LossSettings
+    methodName: ChangeScrene
+  - assembly: Assembly-CSharp
+    fullTypeName: MusicController
+    methodName: SetMusicVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: VictorySettings
+    methodName: ChangeScrene
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneSettings
+    methodName: RestartButtonPressed
+  - assembly: Assembly-CSharp
+    fullTypeName: MusicController
+    methodName: SetSoundsVolume
+  - assembly: Assembly-CSharp
+    fullTypeName: SceneSettings
+    methodName: ChangeScene
   - assembly: Assembly-CSharp
     fullTypeName: LossSettings
     methodName: RestartButtonPressed
@@ -295,37 +328,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1552}
+      Script: {instanceID: 1640}
     - Class: 114
-      Script: {instanceID: 1554}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 2420}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3094}
+      Script: {instanceID: 3404}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3408}
-    - Class: 114
-      Script: {instanceID: 3420}
+      Script: {instanceID: 3426}
     - Class: 114
       Script: {instanceID: 3430}
+    - Class: 114
+      Script: {instanceID: 3622}
     - Class: 114
       Script: {instanceID: 3624}
     - Class: 114
       Script: {instanceID: 3694}
     - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
       Script: {instanceID: 3946}
     - Class: 114
-      Script: {instanceID: 4576}
+      Script: {instanceID: 4448}
     - Class: 114
-      Script: {instanceID: 5908}
+      Script: {instanceID: 4578}
     - Class: 114
       Script: {instanceID: 6178}
     - Class: 114
@@ -339,9 +374,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8546}
     - Class: 114
-      Script: {instanceID: 8584}
+      Script: {instanceID: 8582}
     - Class: 114
-      Script: {instanceID: 10112}
+      Script: {instanceID: 8586}
+    - Class: 114
+      Script: {instanceID: 8642}
+    - Class: 114
+      Script: {instanceID: 8932}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -396,37 +435,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1552}
+      Script: {instanceID: 1640}
     - Class: 114
-      Script: {instanceID: 1554}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 2420}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3094}
+      Script: {instanceID: 3404}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3408}
-    - Class: 114
-      Script: {instanceID: 3420}
+      Script: {instanceID: 3426}
     - Class: 114
       Script: {instanceID: 3430}
+    - Class: 114
+      Script: {instanceID: 3622}
     - Class: 114
       Script: {instanceID: 3624}
     - Class: 114
       Script: {instanceID: 3694}
     - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
       Script: {instanceID: 3946}
     - Class: 114
-      Script: {instanceID: 4576}
+      Script: {instanceID: 4448}
     - Class: 114
-      Script: {instanceID: 5908}
+      Script: {instanceID: 4578}
     - Class: 114
       Script: {instanceID: 6178}
     - Class: 114
@@ -440,9 +481,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8546}
     - Class: 114
-      Script: {instanceID: 8584}
+      Script: {instanceID: 8582}
     - Class: 114
-      Script: {instanceID: 10112}
+      Script: {instanceID: 8586}
+    - Class: 114
+      Script: {instanceID: 8642}
+    - Class: 114
+      Script: {instanceID: 8932}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -497,37 +542,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1552}
+      Script: {instanceID: 1640}
     - Class: 114
-      Script: {instanceID: 1554}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 2420}
+      Script: {instanceID: 3082}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3094}
+      Script: {instanceID: 3404}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3408}
-    - Class: 114
-      Script: {instanceID: 3420}
+      Script: {instanceID: 3426}
     - Class: 114
       Script: {instanceID: 3430}
+    - Class: 114
+      Script: {instanceID: 3622}
     - Class: 114
       Script: {instanceID: 3624}
     - Class: 114
       Script: {instanceID: 3694}
     - Class: 114
+      Script: {instanceID: 3826}
+    - Class: 114
       Script: {instanceID: 3946}
     - Class: 114
-      Script: {instanceID: 4576}
+      Script: {instanceID: 4448}
     - Class: 114
-      Script: {instanceID: 5908}
+      Script: {instanceID: 4578}
     - Class: 114
       Script: {instanceID: 6178}
     - Class: 114
@@ -541,9 +588,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8546}
     - Class: 114
-      Script: {instanceID: 8584}
+      Script: {instanceID: 8582}
     - Class: 114
-      Script: {instanceID: 10112}
+      Script: {instanceID: 8586}
+    - Class: 114
+      Script: {instanceID: 8642}
+    - Class: 114
+      Script: {instanceID: 8932}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -582,19 +633,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1640}
     - Class: 114
-      Script: {instanceID: 2032}
+      Script: {instanceID: 2028}
     - Class: 114
-      Script: {instanceID: 2414}
+      Script: {instanceID: 2410}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 4956}
+      Script: {instanceID: 4958}
     - Class: 114
-      Script: {instanceID: 5294}
+      Script: {instanceID: 5296}
     - Class: 114
       Script: {instanceID: 6272}
     - Class: 114
@@ -637,15 +688,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1640}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3250}
     - Class: 114
       Script: {instanceID: 3624}
     - Class: 114
-      Script: {instanceID: 4544}
+      Script: {instanceID: 3826}
+    - Class: 114
+      Script: {instanceID: 4546}
     - Class: 114
       Script: {instanceID: 6610}
     - Class: 114
@@ -653,7 +706,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7664}
     - Class: 114
-      Script: {instanceID: 9102}
+      Script: {instanceID: 9108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -706,15 +759,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1640}
     - Class: 114
-      Script: {instanceID: 2980}
+      Script: {instanceID: 2976}
     - Class: 114
-      Script: {instanceID: 3254}
+      Script: {instanceID: 3250}
     - Class: 114
-      Script: {instanceID: 3420}
+      Script: {instanceID: 3416}
     - Class: 114
-      Script: {instanceID: 3430}
+      Script: {instanceID: 3426}
     - Class: 114
       Script: {instanceID: 3624}
     - Class: 114
@@ -722,9 +775,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3826}
     - Class: 114
-      Script: {instanceID: 4576}
-    - Class: 114
-      Script: {instanceID: 5908}
+      Script: {instanceID: 4578}
     - Class: 114
       Script: {instanceID: 6178}
     - Class: 114
@@ -738,7 +789,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7688}
     - Class: 114
-      Script: {instanceID: 10106}
+      Script: {instanceID: 10112}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -758,18 +809,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 7bad62adb5931b14bbcfe9e75cd0ddf0
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CharacterLoader
-  - hash:
-      serializedVersion: 2
-      Hash: e0f5cc1327772c41df79c52ee3e898b7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CameraController
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -1144,6 +1183,12 @@ ScriptsOnlyBuild:
     className: LevelEndTrigger
   - hash:
       serializedVersion: 2
+      Hash: 7c3c22f26fed99996f5bfbc3b786d35a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Door
+  - hash:
+      serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1166,6 +1211,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine
     namespaceName: Cinemachine
     className: CinemachineMixingCamera
+  - hash:
+      serializedVersion: 2
+      Hash: cce03a92cb68c785231102d6b17ae270
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ButtonPlate
   - hash:
       serializedVersion: 2
       Hash: 915204dac8acad99f076d6e72ada0a0f
@@ -1210,7 +1261,7 @@ ScriptsOnlyBuild:
     className: UnityOnTransformParentChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 5a546f09d5fa33898b81a96b9c73f79e
+      Hash: 0de9a9c379365877268a328885a3c47e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MusicController
@@ -1234,7 +1285,7 @@ ScriptsOnlyBuild:
     className: VariablesAsset
   - hash:
       serializedVersion: 2
-      Hash: 13144faf0dc5e54bb1e4371dcd694724
+      Hash: d38c9369d112b7e836824e686305ab03
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SceneSettings
@@ -1312,6 +1363,12 @@ ScriptsOnlyBuild:
     className: ScriptGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: 7bad62adb5931b14bbcfe9e75cd0ddf0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CharacterLoader
+  - hash:
+      serializedVersion: 2
       Hash: fb79e95da8891fc7ac6c36ca6967af23
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1336,7 +1393,7 @@ ScriptsOnlyBuild:
     className: MainMenu
   - hash:
       serializedVersion: 2
-      Hash: 51ca294a5adedde75249344ea7848bc0
+      Hash: 3f99ad3335974cec093f74ecdf782d77
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MovementHero
@@ -1582,12 +1639,6 @@ ScriptsOnlyBuild:
     className: CinemachineBlendListCamera
   - hash:
       serializedVersion: 2
-      Hash: 857189a490fc7ef055677b07afb43c3f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: VolumeSlider
-  - hash:
-      serializedVersion: 2
       Hash: f2098fcd8ee983a05ec192f63904298f
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1684,7 +1735,7 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 91bce029333d9e51288dbbd39b917d6e
+      Hash: 3feee7f09078680d6e49642ac235ecac
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Damage
@@ -2062,6 +2113,12 @@ ScriptsOnlyBuild:
     className: CrystalCounter
   - hash:
       serializedVersion: 2
+      Hash: 91a571340c6851cbddf8c21bf46a6e1b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LevelController
+  - hash:
+      serializedVersion: 2
       Hash: 830c3b545f6e6ee60a4cebab90516f2c
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -2090,6 +2147,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: Cinemachine.Examples
     className: CameraMagnetTargetController
+  - hash:
+      serializedVersion: 2
+      Hash: e0f5cc1327772c41df79c52ee3e898b7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraController
   - hash:
       serializedVersion: 2
       Hash: 5f27242e1ad2aadb1faa604dd779a464
@@ -2126,6 +2189,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMoveMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 9bb1791037077c0b5bf402aa23948957
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WaterRiseController
   - hash:
       serializedVersion: 2
       Hash: e20a6de5f1fd1dfae6f1186e8f77c3d9
@@ -2330,12 +2399,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Menu
-  - hash:
-      serializedVersion: 2
-      Hash: 91a571340c6851cbddf8c21bf46a6e1b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: LevelController
   platform: 19
   scenePathNames:
   - "Assets/Scenes/\u0412\u0441\u0442\u0443\u043F\u043B\u043D\u0438\u0435.unity"
@@ -2345,4 +2408,5 @@ ScriptsOnlyBuild:
   - "Assets/Scenes/2 \u0443\u0440\u043E\u0432\u0435\u043D\u044C.unity"
   - "Assets/Scenes/3 \u0443\u0440\u043E\u0432\u0435\u043D\u044C.unity"
   playerPath: "D:/\u041C\u043E\u0438 \u0434\u0430\u043D\u043D\u044B\u0435/\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F
-    \u0440\u0430\u0431\u043E\u0442\u0430 6 \u0441\u0435\u043C\u0435\u0441\u0442\u0440/\u0418\u0433\u0440\u0430/Dino.exe"
+    \u0440\u0430\u0431\u043E\u0442\u0430 6 \u0441\u0435\u043C\u0435\u0441\u0442\u0440/\u0422\u0435\u0441\u0442
+    \u0438\u0433\u0440\u044B/Dino.exe"

@@ -50,7 +50,6 @@ public class WaterRiseController : MonoBehaviour
     {
         // Поднимаем воду по оси Y
         transform.position += Vector3.up * currentRiseSpeed;
-        Debug.Log("Water has risen to: " + transform.position.y + " with speed: " + currentRiseSpeed);
     }
 
     void UpdateCountdown()
@@ -59,7 +58,7 @@ public class WaterRiseController : MonoBehaviour
         float timeLeft = nextRiseTime - Time.time;
 
         // Обновляем текстовый элемент обратного отсчета
-        countdownText.text = "Next Rise In: " + Mathf.Ceil(timeLeft).ToString() + "s";
+        countdownText.text = "До следующей волны: " + Mathf.Ceil(timeLeft).ToString() + "с";
 
         // Изменение цвета текста в зависимости от оставшегося времени
         if (timeLeft <= 1.0f)

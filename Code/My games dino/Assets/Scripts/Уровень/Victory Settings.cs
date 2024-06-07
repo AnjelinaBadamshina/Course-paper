@@ -47,7 +47,7 @@ public class VictorySettings : MonoBehaviour
         if (nextLevelButton != null)
         {
             nextLevelButton.interactable = false; // Выключить кнопку "Следующий уровень"
-            nextLevelButton.GetComponentInChildren<Text>().text = "Сontinued"; // Изменить текст кнопки
+            nextLevelButton.GetComponentInChildren<Text>().text = "Продолжение\nследует"; // Изменить текст кнопки
         }
     }
 }

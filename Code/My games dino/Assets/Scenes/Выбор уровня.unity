@@ -1150,7 +1150,7 @@ RectTransform:
   m_GameObject: {fileID: 742702790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.14697288, y: 0.15152, z: 0.15152}
+  m_LocalScale: {x: 0.111639135, y: 0.11509308, z: 0.11509308}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 578188284}
@@ -1182,18 +1182,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f37e8a1d9ff146740a2e8a2625623ff1, type: 3}
-    m_FontSize: 111
+    m_FontSize: 157
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 145
+    m_MaxSize: 157
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Reset progress level
+  m_Text: "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441"
 --- !u!222 &742702793
 CanvasRenderer:
   m_ObjectHideFlags: 0
